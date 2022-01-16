@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','InfoController@beranda')->name('beranda');
+Route::get('/berita-desa','InfoController@beritaDesa')->name('berita-desa');
+Route::get('/berita-desa/PENGUNDIAN-NOMOR-URUT-DAN-PENETAPAN-CALON-KEPALA-DESA-SAMBIMULYO','InfoController@artikelSatu')->name('artikel-1');
