@@ -10,12 +10,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-xs-6 mb-4">
                         <div class="text-center">
-                            <a href=""><img class="img-fluid" src="{{asset('assets/img/berita/002.jpg')}}" width="250" alt="Tidak ada gambar" /></a>
+                            <a href="{{ route('artikel-4') }}"><img class="img-fluid" src="{{asset('assets/img/berita/002.jpg')}}" width="250" alt="Tidak ada gambar" /></a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-6 mb-4">
                         <div class="row">
-                            <a href=""><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2020 DESA SAMBIMULYO</h5></a>
+                            <a href="{{ route('artikel-4') }}"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2020 DESA SAMBIMULYO</h5></a>
                         </div>
                         <div class="row">
                             <p>buka Link https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing
@@ -31,12 +31,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-xs-6 mb-4">
                         <div class="text-center">
-                            <a href=""><img class="img-fluid" src="{{asset('assets/img/berita/002.jpg')}}" width="250" alt="" /></a>
+                            <a href="{{ route('artikel-3') }}"><img class="img-fluid" src="{{asset('assets/img/berita/002.jpg')}}" width="250" alt="" /></a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-6 mb-4">
                         <div class="row">
-                            <a href=""><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2019 DESA SAMBIMULYO</h5></a>
+                            <a href="{{ route('artikel-3') }}"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2019 DESA SAMBIMULYO</h5></a>
                         </div>
                         <div class="row">
                             <p>buka Link https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing
@@ -52,12 +52,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-xs-6 mb-4">
                         <div class="text-center">
-                            <a href=""><img class="img-fluid" src="{{asset('assets/img/berita/003.jpg')}}" width="250" alt="Tidak ada gambar" /></a>
+                            <a href="{{ route('artikel-2') }}"><img class="img-fluid" src="{{asset('assets/img/berita/003.jpg')}}" width="250" alt="Tidak ada gambar" /></a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-6 mb-4">
                         <div class="row">
-                            <a href=""><h5>PEMBINAAN RT DAN RW DESA SAMBIMULYO</h5></a>
+                            <a href="{{ route('artikel-2') }}"><h5>PEMBINAAN RT DAN RW DESA SAMBIMULYO</h5></a>
                         </div>
                         <div class="row">
                             <p>Sambimulyo - Rabu 18 Desember 2019, Kepala Desa Sambimulyo Andik Santoso membuka  secara langsung kegiatan Pembinaan RT dan RW yang diselenggarakan di Kantor Desa Sambimulyo. Pembinaan ini dihadiri oleh Forpimka Kecamatan Bangorejo, ...
