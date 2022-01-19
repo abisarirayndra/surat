@@ -15,12 +15,7 @@
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-6 mb-4">
                         <div class="row">
-                            <a href="{{ route('artikel-4') }}"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2020 DESA SAMBIMULYO</h5></a>
-                        </div>
-                        <div class="row">
-                            <p>buka Link https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing
-
-                            </p>
+                            <a href="https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing" target="_blank"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2020 DESA SAMBIMULYO</h5></a>
                         </div>
                         <div class="row">
                             <div class="text-muted"><i class="fas fa-feather-alt"></i> admin</div>
@@ -36,12 +31,7 @@
                     </div>
                     <div class="col-lg-8 col-sm-6 col-xs-6 mb-4">
                         <div class="row">
-                            <a href="{{ route('artikel-3') }}"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2019 DESA SAMBIMULYO</h5></a>
-                        </div>
-                        <div class="row">
-                            <p>buka Link https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing
-
-                            </p>
+                            <a href="https://drive.google.com/file/d/13X9hdtfdJknsspmPDmdkS0ZhgIJiTaAk/view?usp=sharing" target="_blank"><h5>LAPORAN PERTANGGUNGJAWABAN APBDES TAHUN 2019 DESA SAMBIMULYO</h5></a>
                         </div>
                         <div class="row">
                             <div class="text-muted"><i class="fas fa-feather-alt"></i> admin</div>
