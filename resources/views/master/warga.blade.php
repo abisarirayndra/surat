@@ -33,13 +33,13 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand-md navbar-light bg-success topbar mb-4 static-top shadow">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="" width="50" alt=""></a>
+                    <a class="navbar-brand" href="#"><img src="{{asset('assets/img/icon2.png')}}" width="50" alt=""></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars ml-1"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav mr-auto bg-success">
-                            <li class="nav-item"><a class="nav-link text-white" href="">Pengajuan Surat</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="{{ route('warga.pengajuan-surat') }}">Pengajuan Surat</a></li>
                             <div class="topbar-divider d-none d-sm-block"></div>
 
                                 <!-- Nav Item - User Information -->
@@ -98,7 +98,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Cakra Krisna Manggala {{\Carbon\Carbon::now()->isoFormat('Y')}}</span>
+            <span>Copyright &copy; Desa Sambimulyo {{\Carbon\Carbon::now()->isoFormat('Y')}}</span>
         </div>
     </div>
     </footer>

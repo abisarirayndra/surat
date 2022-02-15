@@ -44,6 +44,10 @@
                                       <div class="form-group">
                                           <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password">
                                       </div>
+                                      <div class="form-group">
+                                        <input type="password" class="form-control form-control-user" id="confirm_password" placeholder="Password" name="password">
+                                        <small id="message"></small>
+                                        </div>
                                       <button id="button" class="btn btn-success btn-user btn-block" type="submit">
                                           Daftar
                                       </button>

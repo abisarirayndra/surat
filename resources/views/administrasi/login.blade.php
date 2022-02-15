@@ -24,7 +24,7 @@
                                   <div class="text-center">
                                       <h1 class="h4 text-gray-900 mb-4">Pengajuan Surat Desa Sambimulyo</h1>
                                   </div>
-                                  <form class="user" action="" method="post">
+                                  <form class="user" action="{{ route('up-login') }}" method="post">
                                     @csrf
                                       <div class="form-group">
                                           <input type="text" class="form-control form-control-user"

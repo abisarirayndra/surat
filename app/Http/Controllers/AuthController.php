@@ -14,6 +14,26 @@ class AuthController extends Controller
         return view('administrasi.login');
     }
 
+    public function upLogin(Request $request){
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->password,
+        ];
+
+        if(Auth::attempt($credentials)){
+            if(auth()->user()->role_id == 1){
+                Alert::toast('Selamat Datang Pendaftar','success');
+                return redirect()->route('warga.pengajuan-surat');
+            }
+            if(auth()->user()->role_id == 2){
+                Alert::toast('Selamat Datang Operator','success');
+                return redirect()->route('operator.pengajuan-surat');
+            }
+        }
+        Alert::error('Akses tidak diizinkan','Gagal');
+        return redirect('login');
+    }
+
     public function registrasi(){
         return view('administrasi.registrasi');
     }
@@ -42,12 +62,13 @@ class AuthController extends Controller
 
         if(Auth::attempt($credentials)){
             if(auth()->user()->role_id == 1){
-                Alert::toast('Selamat Datang Pendaftar','success');
+                Alert::toast('Selamat Datang Warga','success');
                 return redirect()->route('warga.pengajuan-surat');
             }
+
         }
         Alert::error('Akses tidak diizinkan','Gagal');
-        return redirect('masuk');
+        return redirect('login');
     }
 
     public function logout(Request $request)
