@@ -21,3 +21,13 @@ Route::get('/berita-desa/LAPORAN-PERTANGGUNGJAWABAN-APBDES-TAHUN-2019-DESA-SAMBI
 Route::get('/berita-desa/LAPORAN-PERTANGGUNGJAWABAN-APBDES-TAHUN-2020-DESA-SAMBIMULYO','InfoController@artikelEmpat')->name('artikel-4');
 Route::get('/galeri-desa','InfoController@galeriDesa')->name('galeri-desa');
 
+Route::get('/login','AuthController@login')->name('login');
+Route::get('/registrasi','AuthController@registrasi')->name('registrasi');
+Route::post('/upload-reg','AuthController@upRegistrasi')->name('upload-reg');
+Route::get('/logout','AuthController@logout')->name('logout');
+
+Route::group(['prefix' => 'warga','middleware' => ['auth','warga-role']], function () {
+    Route::get('/pengajuan-surat','SuratController@suratWarga')->name('warga.pengajuan-surat');
+
+});
+

@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('beranda')}}">Beranda</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('berita-desa') }}">Berita Desa</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('galeri-desa') }}">Galeri Desa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Ajukan Surat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Ajukan Surat</a></li>
                     </ul>
                 </div>
             </div>
