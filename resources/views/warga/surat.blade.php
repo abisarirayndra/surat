@@ -39,7 +39,7 @@
                             @if ($item->file_surat == null)
                                 <td>Belum Tersedia</td>
                             @else
-                                <td>{{ $item->file_surat }}</td>
+                                <td><a href="{{ route('warga.file-ktp', [$item->id]) }}" class="btn btn-sm btn-success" target="_blank">Lihat Surat</a></td>
                             @endif
                             <td>{{ \Carbon\Carbon::parse($item->created_at)->isoFormat('dddd, D MMMM YYYY HH:mm') }}</td>
                             <td>
@@ -71,7 +71,7 @@
                             @if ($item->file_surat == null)
                                 <td>Belum Tersedia</td>
                             @else
-                                <td>{{ $item->file_surat }}</td>
+                                <td><a href="{{ route('warga.file-tidakmampu', [$item->id]) }}" class="btn btn-sm btn-success" target="_blank">Lihat Surat</a></td>
                             @endif
                             <td>{{ \Carbon\Carbon::parse($item->created_at)->isoFormat('dddd, D MMMM YYYY HH:mm') }}</td>
                             <td>
@@ -103,7 +103,7 @@
                             @if ($item->file_surat == null)
                                 <td>Belum Tersedia</td>
                             @else
-                                <td>{{ $item->file_surat }}</td>
+                                <td><a href="{{ route('warga.file-usaha', [$item->id]) }}" class="btn btn-sm btn-success" target="_blank">Lihat Surat</a></td>
                             @endif
                             <td>{{ \Carbon\Carbon::parse($item->created_at)->isoFormat('dddd, D MMMM YYYY HH:mm') }}</td>
                             <td>

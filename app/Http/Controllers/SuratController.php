@@ -241,8 +241,20 @@ class SuratController extends Controller
     }
 
     public function pdfKTP($id){
+        $user = Auth::user()->email;
         $ktp = SuratKtp::find($id);
-        $pdf = PDF::loadFile(public_path('surat/ktp/'. $ktp->file_surat));
-        return $pdf->download('download.pdf');
+        return view('warga.surat.file-ktp', compact('ktp','user'));
+    }
+
+    public function pdfTidakMampu($id){
+        $user = Auth::user()->email;
+        $tidakmampu = SuratTidakMampu::find($id);
+        return view('warga.surat.file-tidakmampu', compact('tidakmampu','user'));
+    }
+
+    public function pdfUsaha($id){
+        $user = Auth::user()->email;
+        $usaha = SuratUsaha::find($id);
+        return view('warga.surat.file-usaha', compact('usaha','user'));
     }
 }

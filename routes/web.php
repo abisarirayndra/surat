@@ -39,6 +39,11 @@ Route::group(['prefix' => 'warga','middleware' => ['auth','warga-role']], functi
     Route::get('/hapus-pengajuan-ktp/{id}','SuratController@hapusKTP')->name('warga.hapus-pengajuan-ktp');
     Route::get('/hapus-pengajuan-tidakmampu/{id}','SuratController@hapusTidakMampu')->name('warga.hapus-pengajuan-tidakmampu');
     Route::get('/hapus-pengajuan-usaha/{id}','SuratController@hapusUsaha')->name('warga.hapus-pengajuan-usaha');
+    Route::get('/file-ktp/{id}','SuratController@pdfKTP')->name('warga.file-ktp');
+    Route::get('/file-tidakmampu/{id}','SuratController@pdfTidakMampu')->name('warga.file-tidakmampu');
+    Route::get('/file-usaha/{id}','SuratController@pdfUsaha')->name('warga.file-usaha');
+
+
 
 });
 Route::group(['prefix' => 'operator','middleware' => ['auth','operator-role']], function () {
@@ -52,7 +57,9 @@ Route::group(['prefix' => 'operator','middleware' => ['auth','operator-role']], 
     Route::get('/hapus-pengajuan-ktp/{id}','SuratController@hapusKTP')->name('operator.hapus-pengajuan-ktp');
     Route::get('/hapus-pengajuan-tidakmampu/{id}','SuratController@hapusTidakMampu')->name('operator.hapus-pengajuan-tidakmampu');
     Route::get('/hapus-pengajuan-usaha/{id}','SuratController@hapusUsaha')->name('operator.hapus-pengajuan-usaha');
-    Route::get('/stream-ktp/{id}','SuratController@pdfKTP')->name('operator.stream-ktp');
+    Route::get('/file-ktp/{id}','SuratController@pdfKTP')->name('operator.file-ktp');
+    Route::get('/file-tidakmampu/{id}','SuratController@pdfTidakMampu')->name('operator.file-tidakmampu');
+    Route::get('/file-usaha/{id}','SuratController@pdfUsaha')->name('operator.file-usaha');
 
 });
 
