@@ -71,10 +71,10 @@
 <script type="text/javascript">
     $('#password, #confirm_password').on('keyup', function () {
           if ($('#password').val() == $('#confirm_password').val()) {
-            $('#message').html('Password Cocok').css('color', 'green');
+            $('#message').html('Password Sama').css('color', 'green');
             $('#button').removeAttr("disabled");
           } else {
-            $('#message').html('Password Tidak Cocok').css('color', 'red');
+            $('#message').html('Password tidak sama, silakan coba lagi').css('color', 'red');
             var element = document.getElementById('button');
             element.setAttribute('disabled','disabled');
           }
