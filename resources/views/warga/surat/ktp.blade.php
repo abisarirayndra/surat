@@ -75,6 +75,13 @@
                             </select>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 mb-3 mb-sm-0">
+                            <label for="wa">No. Whatsapp</label>
+                                <input type="number" class="form-control form-control-user" id="wa"
+                                    placeholder="Nomor Whatsapp/Telepon" name="wa" required>
+                        </div>
+                    </div>
                     <div class="text-center mt-4">
                         <button class="btn btn-success" type="submit">Simpan</button>
                     </div>

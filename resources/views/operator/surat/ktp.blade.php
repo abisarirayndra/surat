@@ -43,6 +43,10 @@
                                     <td class="pl-4">{{$data->alamat}}</td>
                                 </tr>
                                 <tr>
+                                    <td><b>Nomor Whatsapp</b></td>
+                                    <td class="pl-4">{{$data->wa}}</td>
+                                </tr>
+                                <tr>
                                     <td><b>Tanggal Pengajuan</b></td>
                                     <td class="pl-4">{{\Carbon\Carbon::parse($data->created_at)->isoFormat('dddd, D MMMM Y HH:mm')}}</td>
                                 </tr>

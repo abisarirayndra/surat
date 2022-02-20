@@ -41,6 +41,7 @@ class SuratController extends Controller
             'agama' => 'required',
             'status' =>'required',
             'pekerjaan' => 'required',
+            'wa' => 'required|max:20'
         ]);
         SuratKtp::create([
             'nama' => $request->nama,
@@ -54,6 +55,7 @@ class SuratController extends Controller
             'pekerjaan' => $request->pekerjaan,
             'warga_id' => Auth::user()->id,
             'jenis_surat' => "Pengajuan KTP",
+            'wa' => $request->wa,
         ]);
 
         Alert::toast('Pengajuan Berhasil Dibuat','success');
@@ -65,7 +67,7 @@ class SuratController extends Controller
     }
 
     public function upDataSuratTidakMampu(Request $request){
-        $request->validate([
+        $this->validate($request,[
             'nama' => 'required',
             'tempat_lahir' => 'required',
             'tanggal_lahir' => 'required',
@@ -81,6 +83,7 @@ class SuratController extends Controller
             'kelamin_a' => 'required',
             'sekolah_a' => 'required',
             'alasan' => 'required',
+            'wa' => 'required|max:20'
         ]);
         SuratTidakMampu::create([
             'nama' => $request->nama,
@@ -100,6 +103,7 @@ class SuratController extends Controller
             'kelamin_a' => $request->kelamin_a,
             'sekolah_a' => $request->sekolah_a,
             'alasan' => $request->alasan,
+            'wa' => $request->wa,
         ]);
 
         Alert::toast('Pengajuan Berhasil Dibuat','success');
@@ -110,7 +114,7 @@ class SuratController extends Controller
         return view('warga.surat.usaha', compact('user'));
     }
     public function upDataSuratUsaha(Request $request){
-        $request->validate([
+        $this->validate($request, [
             'nama' => 'required',
             'tempat_lahir' => 'required',
             'tanggal_lahir' => 'required',
@@ -121,6 +125,7 @@ class SuratController extends Controller
             'status' =>'required',
             'pekerjaan' => 'required',
             'usaha' => 'required',
+            'wa' => 'required|max:20'
         ]);
         SuratUsaha::create([
             'nama' => $request->nama,
@@ -135,6 +140,7 @@ class SuratController extends Controller
             'warga_id' => Auth::user()->id,
             'jenis_surat' => "Usaha",
             'usaha' => $request->usaha,
+            'wa' => $request->wa,
         ]);
 
         Alert::toast('Pengajuan Berhasil Dibuat','success');

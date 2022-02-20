@@ -39,9 +39,9 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-4 mb-3 mb-sm-0">
-                            <label for="nik">Nomor Induk Kependudukan</label>
+                            <label for="nik">Nomor Induk Kependudukan </label>
                             <input type="text" class="form-control form-control-user"
-                                placeholder="NIK/No. KTP" name="nik" required>
+                                placeholder="NIK/No. KTP (16 Karakter)" name="nik" required>
                         </div>
                         <div class="col-sm-4">
                             <label for="markas">Jenis Kelamin</label>
@@ -80,6 +80,11 @@
                             <label for="alamat">Usaha Yang Dimiliki</label>
                                 <input type="text" class="form-control form-control-user" id="usaha"
                                     placeholder="Usaha Yang dimiliki" name="usaha" required>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="wa">No. Whatsapp</label>
+                                <input type="number" class="form-control form-control-user" id="wa"
+                                    placeholder="Nomor Whatsapp/Telepon" name="wa" required>
                         </div>
                     </div>
                     <div class="text-center mt-4">
